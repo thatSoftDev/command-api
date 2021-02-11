@@ -92,7 +92,7 @@ namespace CommandAPI.Tests
             var controller = new CommandsController(mockRepo.Object, mapper);
             //Act
 
-            var result = controller.GetAllCommands();
+            var result = controller.Get();
             //Assert
             Assert.IsType<ActionResult<IEnumerable<CommandReadDto>>>(result);
         }
