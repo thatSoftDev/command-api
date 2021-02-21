@@ -12,7 +12,7 @@ namespace CommandAPI.Migrations
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+
             modelBuilder
                 .UseIdentityByDefaultColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
@@ -42,7 +42,6 @@ namespace CommandAPI.Migrations
 
                     b.ToTable("CommandItems");
                 });
-#pragma warning restore 612, 618
         }
     }
 }
